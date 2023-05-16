@@ -1,0 +1,43 @@
+#include<iostream>
+#include <string>
+using namespace std;
+class classroom{
+    public:
+    int mathsmark;
+    int historymark;
+    
+    float 
+    
+    
+};
+class student:public classroom{
+    public:
+    void getdetails(){
+        cout<<"Enter maths mark: ";
+        cin>>mathsmark;
+        cout<<"Enter history mark: ";
+        cin>>historymark;
+    }
+    void showdetails() {
+        // float classavg;
+        // for (int i =0; i<n;i++){
+        //     classavg = classavg + s1.mathsmark[i]
+        // }
+        
+        cout<<"The maths  marks is : "<< mathsmark<<endl;
+    }
+    
+};
+
+int main () {
+    int n;
+    cin>>n;
+    student s1[n];
+    for(int i=0;i<n;i++){
+        s1[i].getdetails();
+    }
+    for(int i=0;i<n;i++){
+        s1[i].showdetails();
+    }
+    
+}
